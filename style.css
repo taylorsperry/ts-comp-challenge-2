@@ -1,0 +1,35 @@
+body {
+  background-color: grey;
+}
+
+nav {
+  background-color: pink;
+}
+
+header {
+  border: solid black 2px;
+}
+
+.search-bar {
+  background-color: green;
+}
+
+.job-title {
+  background-color: yellow;
+}
+
+main {
+  border: solid black 2px;
+}
+
+.graphs {
+  background-color: blue;
+}
+
+.description {
+  background-color: orange;
+}
+
+aside {
+  background-color: green;
+}
