@@ -1,35 +1,52 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
 body {
-  background-color: grey;
+  background-image: url(images/comp-challenge-two.jpeg);
+  background-size: 100%;
+  height: 1250px;
+  display: grid;
+  grid-template-columns: 1fr 3fr 3fr;
+  grid-template-rows: 1.75fr 4fr 4fr;
+  grid-template-areas: 
+    "nav header header"
+    "nav main main"
+    "nav main main";
 }
 
 nav {
-  background-color: pink;
+  border: solid pink 10px;
+  grid-area: nav;
 }
 
 header {
   border: solid black 2px;
+  grid-area: header;
 }
 
 .search-bar {
-  background-color: green;
+  /*border: solid green 10px;*/
 }
 
 .job-title {
-  background-color: yellow;
+  /*border: solid yellow 10px;*/
 }
 
 main {
   border: solid black 2px;
+  grid-area: main;
 }
 
 .graphs {
-  background-color: blue;
+  /*border: solid blue 10px;*/
 }
 
 .description {
-  background-color: orange;
+  /*border: solid orange 10px;*/
 }
 
 aside {
-  background-color: green;
+  /*border: solid green 10px;*/
 }
