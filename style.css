@@ -5,12 +5,12 @@
 
 body {
   font-family: 'Open Sans', sans-serif;
-  /*background-image: url(images/comp-challenge-two.jpeg);*/
+  background-image: url(images/comp-challenge-two.jpeg);
   background-size: 100%;
   height: 100%;
   display: grid;
   grid-template-columns: 1fr 3fr 3fr;
-  grid-template-rows: 1fr 2fr 2fr;
+  grid-template-rows: 1.25fr 3fr 3fr;
   grid-template-areas: 
     "nav header header"
     "nav main main"
@@ -24,7 +24,7 @@ body {
 nav {
   grid-area: nav;
   display: grid;
-  grid-template-rows: 1fr 1.5fr 1.5fr 3fr;
+  grid-template-rows: 1fr 1.5fr 1.5fr 4.4fr;
   background-color: #3b5998;
   color: #8b9dc3;
 }
@@ -41,6 +41,7 @@ nav {
 .profile-pic {
   height: 100px;
   border-radius: 50px;
+  border: solid #293e6a 2px;
 }
 
 .profile-name {
@@ -111,19 +112,41 @@ h3 {
 /* Header Begins Here */
 
 header {
-  border: solid black 2px;
   grid-area: header;
   display: grid;
   grid-template-rows: 1fr 2fr;
 }
 
 .search-bar {
-  border: solid green 5px;
+  display: flex;
+  background-color: #fff;
+  color: #8b9dc3;
+}
+
+.search-div {
+  border: solid #dfe3ee 2px;
+  flex-direction: row;
+  padding: 2rem;
+}
+
+.no-border {
+  border-right: none;
+}
+
+input[type=search],
+::-webkit-input-placeholder {
+  flex-grow: 2;
+  padding-left: 0px;
+  color: #8b9dc3;
+  font-size: 1rem;
+  border-left: none;
 }
 
 .job-title {
   border: solid yellow 5px;
 }
+
+/* Main Section Begins Here */
 
 main {
   border: solid black 2px;
