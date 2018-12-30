@@ -19,6 +19,7 @@ body {
     "nav main main";
   max-width: 1440px;
   min-width: 320px;
+  margin: auto;
 }
 
 /* Nav Section Begins Here */
@@ -223,15 +224,15 @@ h1 {
 
 main {
   background-color: #EDF2F6;
-  border: solid black 2px;
   grid-area: main;
   display: grid;
   grid-template-areas: 
     "graphs graphs"
+    "divider divider"
     "description social"
     "description social";
   grid-template-columns: 3fr 1.3fr;
-  grid-template-rows: 1fr 2fr;
+  grid-template-rows: 1fr 25px 2fr;
 }
 
 /* Graphs Begin Here*/
@@ -240,12 +241,33 @@ main {
   grid-area: graphs;
   display: grid;
   grid-template-columns: 2fr 1fr;
+  grid-template-rows: 3fr 1fr;
 }
 
 .circle-graphs {
   display: flex;
   flex-direction: row;
   align-items: center;
+  padding: 0 3rem 0 3rem;
+}
+
+.caption-container {
+  display: flex;
+  justify-content: center;
+  align-items: top;
+}
+
+.caption {
+  background-color: #fff;
+  height: 50px;
+  padding: 12px 15px 10px 15px;
+  border-radius: 20px;
+  border: solid #dfe3ee 2px;
+  text-transform: uppercase;
+}
+
+.lc {
+  text-transform: none;
 }
 
 .circle-graph {
@@ -255,14 +277,14 @@ main {
 
 .graph {
   display: block;
-  margin: 10px auto;
+  margin: 5px auto;
   max-width: 80%;
-  max-height: 100px;
+  max-height: 200px;
 }
 
 .circle-bg {
   fill: none;
-  stroke: #E1E1E6;
+  stroke: #dfe3ee;
   stroke-width: 3.8;
 }
 
@@ -285,25 +307,104 @@ main {
 }
 
 .number {
-  fill: #666;
-  font-family: sans-serif;
+  fill: #8b9dc3;
+  font-family: 'Open Sans', sans-serif;
   font-size: 0.5em;
   text-anchor: middle;
 }
 
 .type {
-  fill: #666;
-  font-family: sans-serif;
+  fill: #8b9dc3;
+  font-family: 'Open Sans', sans-serif;
   font-size: 0.20em;
   text-anchor: middle;
   text-transform: uppercase;
 }
 
-/*end of graphs*/
+.bar-graph {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*max-width: 50px;
+  max-height: 50px;*/
+}
+
+/* Divider Starts Here */
+
+.divider {
+  grid-area: divider;
+  text-align: center;
+}
+
+.divider-icon {
+  vertical-align: middle;
+  font-size: 1.5rem;
+}
+
+.outer-line {
+  display: inline-block;
+  width: 45%;
+  border-top: 1px solid #8b9dc3;
+}
+
+/* Description Starts Here */
 
 .description {
   grid-area: description;
-  border: solid orange 5px;
+}
+
+.description-header {
+  background-color: #8b9dc3;
+  color: #fff;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  margin: 3rem 3rem 0 3rem;
+  padding: 1rem 2rem 1rem 2rem;
+}
+
+.uc {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.header-row {
+  padding: 1rem 0 1rem 0;
+}
+
+.description-container {
+  border: solid #fff 2rem;
+  border-top: none;
+  background-color: #fff;
+  margin: 0 3rem 3rem 3rem;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: repeat(auto-fit, 1fr);
+}
+
+.description-header {
+  border: none;
+  
+}
+
+.description-row {
+  padding: 1rem 0 1rem 0;
+  border-top: solid lightgrey 1px;
+  display: flex;
+  align-items: top;
+}
+
+.no-top {
+  border: none;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.scout {
+  height: 60px;
+  border-radius: 50px;
+  margin-right: 1rem;
 }
 
 aside {
