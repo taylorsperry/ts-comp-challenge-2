@@ -30,6 +30,7 @@ nav {
   grid-template-rows: 1fr 1.5fr 1.5fr 4.4fr;
   background-color: #3b5998;
   color: #8b9dc3;
+  min-width: 210px;
 }
 
 .profile {
@@ -64,53 +65,99 @@ h3 {
   font-size: .75rem;
 }
 
-.nav-links {
-  padding-left: 1rem;
+.nav-link {
+  padding: 1rem 0 1rem 1rem;
   display: grid;
   grid-template-columns: 1fr 4fr;
-  grid-template-rows: repeat(auto-fit, 1fr);
-  grid-gap: 25px 10px;
   font-weight: bold;
 }
 
-.flex-icon {
+.icon-flex,
+.p-flex {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.icon {
-  /*padding-right: 1.25rem;*/
-  font-size: 1.25rem;
-}
-
-.yellow {
-  color: yellow;
-}
-
-.blue {
-  color: blue;
-}
-
-.red {
-  color: red;
-}
-
-.green {
-  color: green;
-}
-
-.nav-link {
-  /*padding-top: 1.25rem;*/
-  text-align: left;
+.p-flex {
+  padding-left: .5rem;
+  justify-content: left;
   text-transform: uppercase;
   font-size: .75rem;
 }
 
-/*.icon:hover, .nav-link:hover {
+.checkboxes {
+  padding-left: 1.25rem;
+}
+
+.checkbox input[type="checkbox"] {
+  opacity: 0;
+  margin-bottom: 1.5rem;
+}
+
+.checkbox label {
+  position: relative;
+  display: inline-block;
+  padding-left: 22px;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.checkbox label::before,
+.checkbox label::after {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    border-radius: 20%;
+}
+
+.checkbox label::before{
+    height: .8rem;
+    width: .8rem;
+    left: -10px;
+    top: 2px;   
+}
+
+.checkbox.administrative label::before{
+  background-color: #ffff66;
+}
+
+.checkbox.design label::before{
+  background-color: #0099ff;
+}
+
+.checkbox.executive label::before{
+  background-color: #ff0066;
+}
+
+.checkbox.hr label::before{
+  background-color: #009999;
+}
+
+.checkbox label::after {
+    height: .25rem;
+    width: .5rem;
+    border-left: 2px solid;
+    border-bottom: 2px solid;
+    
+    transform: rotate(-45deg);
+    left: -9px;
+    top: 3px;
+}
+
+.checkbox input[type="checkbox"] + label::after {
+    content: none;
+}
+
+.checkbox input[type="checkbox"]:checked + label::after {
+    content: "";
+}
+
+.nav-link:hover {
   color: #fff;
   background-color: #293e6a;
-}*/
+}
 
 /* Header Begins Here */
 
@@ -121,17 +168,24 @@ header {
   /*background-color: #fff;*/
 }
 
+/* Search Bar */
+
 .search-bar {
   display: flex;
   color: #8b9dc3;
+  font-size: 1.5rem;
 }
 
 .search-div {
   border: solid #dfe3ee 2px;
   flex-direction: row;
   padding: 2rem;
+  display: flex;
 }
 
+.square {
+  width: 109px;
+}
 .no-border {
   border-right: none;
 }
@@ -141,13 +195,20 @@ input[type=search],
   flex-grow: 2;
   padding-left: 0px;
   color: #8b9dc3;
-  font-size: 1rem;
+  font-size: 1.25rem;
+  font-weight: lighter;
   border-left: none;
 }
 
+input[type=search]:focus {
+  outline: none;
+}
+
+/* Job Title */
+
 h1 {
-  padding-bottom: .5rem;
-  color: #293e6a
+  padding-bottom: .75rem;
+  color: #293e6a;
   font-weight: lighter;
   color: #293e6a;
   font-size: 2rem;
@@ -156,6 +217,7 @@ h1 {
 .job-title {
   display: grid;
   grid-template-rows: 3fr 1fr;
+  border-right: solid #dfe3ee 2px;
 }
 
 .top-title {
@@ -167,57 +229,90 @@ h1 {
 .title-details {
   flex-grow: 2;
   padding-left: 3rem;
-  /*align-items: center;*/
 }
 
 .inline {
-  display: flex;
-  flex-direction: row;
-  /*color: #dfe3ee;*/
-  font-size: .75rem;
+  display: grid;
+  grid-template-columns: 25px 110px 30px 200px;
+  align-items: center;
+  font-size: 1rem;
 }
 
-.location-preview {
-  margin-right: 1rem;
+.tiny {
+  font-size: 5px;
+  justify-content: space-around;
 }
 
-}
 .highlight {
-  margin-left: 1rem;
-  color: #6E92B7;
+  color: #0099ff;
 }
 
 .title-buttons {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 350px;
+  width: 425px;
   padding: 0px 30px 0px 30px;
 }
 
-.title-button {
+.title-button,
+.left-button {
   border-radius: 50px;
-  height: 45px;
-  -webkit-appearance: none;
-  -moz-appearance: none;
+  height: 50px;
+  width: 50px;
   color: #8b9dc3;
-  font-family: 'Open Sans', sans-serif;
   border: solid #dfe3ee 2px;
+  font-size: 16px;
+}
+
+.left-button {
+  width: 150px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: #33cc66;
+}
+
+#button-padding {
+  padding-left: 10px;
+  text-transform: uppercase;
+  color: #8b9dc3;
+  font-weight: bold;
+}
+
+.title-button:hover,
+.left-button:hover {
+  border: solid #293e6a 2px;
+  color: #293e6a;
+}
+
+#button-padding:hover {
+  color: #293e6a;
 }
 
 .bottom-title {
-  padding-left: 3rem;
+  padding-left: 1.8rem;
+  display: grid;
+  grid-template-columns: repeat(7, 100px)
 }
 
 .button-tabs {
   height: 100%;
   text-transform: uppercase;
   background-color: #ffffff;
-  padding-right: 25px;
+  /*padding-right: 25px;*/
   font-family: 'Open Sans', sans-serif;
   font-weight: bold;
   color: #8b9dc3;
+  justify-content: center;
   border: none;
+}
+
+.button-tabs:hover {
+  border-bottom: solid #0099ff 2px;
+  color: #293e6a;
+  font-weight: bold;
 }
 
 /* Main Section Begins Here */
@@ -295,15 +390,15 @@ main {
 }
 
 .graph.green .circle {
-  stroke: #93C8CC;
+  stroke: #009999;
 }
 
 .graph.blue .circle {
-  stroke: #6E92B7;
+  stroke: #0099ff;
 }
 
 .graph.pink .circle {
-  stroke: #8F7A94;
+  stroke: #993399;
 }
 
 .number {
