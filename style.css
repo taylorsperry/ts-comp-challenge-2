@@ -319,6 +319,7 @@ h1 {
 
 main {
   background-color: #EDF2F6;
+  border-top: solid #dfe3ee 2px;
   grid-area: main;
   display: grid;
   grid-template-areas: 
@@ -433,13 +434,14 @@ main {
 
 .divider-icon {
   vertical-align: middle;
-  font-size: 1.5rem;
+  font-size: 2rem;
+  color: #dfe3ee;
 }
 
 .outer-line {
   display: inline-block;
   width: 45%;
-  border-top: 1px solid #8b9dc3;
+  border-top: 1.5px solid #dfe3ee;
 }
 
 /* Description Starts Here */
@@ -453,17 +455,38 @@ main {
   color: #fff;
   display: grid;
   grid-template-columns: 1fr 2fr;
+  align-items: center;
   margin: 3rem 3rem 0 3rem;
   padding: 1rem 2rem 1rem 2rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 10px 10px 0 0;
 }
 
 .uc {
   text-transform: uppercase;
-  font-weight: bold;
 }
 
 .header-row {
   padding: 1rem 0 1rem 0;
+}
+
+.edit-button {
+  background: #a2b0cf;
+  border: none;
+  height: 30px;
+  width: 75px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border-radius: 5px;
+}
+
+#edit-text {
+  padding-left: 10px;
 }
 
 .description-container {
@@ -474,16 +497,18 @@ main {
   display: grid;
   grid-template-columns: 1fr 2fr;
   grid-template-rows: repeat(auto-fit, 1fr);
+  font-size: .85rem;
+  font-weight: bold;
+  border-radius: 0 0 10px 10px;
 }
 
 .description-header {
   border: none;
-  
 }
 
 .description-row {
-  padding: 1rem 0 1rem 0;
-  border-top: solid lightgrey 1px;
+  padding: 1.5rem 0 1.5rem 0;
+  border-top: solid #dfe3ee 1px;
   display: flex;
   align-items: top;
 }
