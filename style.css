@@ -12,7 +12,7 @@ body {
   height: 100%;
   display: grid;
   grid-template-columns: 1fr 3fr 3fr;
-  grid-template-rows: 1.25fr 3fr 3fr;
+  grid-template-rows: 1fr 3fr 3fr;
   grid-template-areas: 
     "nav header header"
     "nav main main"
@@ -157,6 +157,7 @@ h3 {
 .nav-link:hover {
   color: #fff;
   background-color: #293e6a;
+  border-left: solid #0099ff 5px;
 }
 
 /* Header Begins Here */
@@ -202,6 +203,11 @@ input[type=search],
 
 input[type=search]:focus {
   outline: none;
+}
+
+.square:hover {
+  background-color: #0099ff;
+  color: #fff;
 }
 
 /* Job Title */
@@ -507,7 +513,7 @@ main {
 }
 
 .description-row {
-  padding: 1.5rem 0 1.5rem 0;
+  padding: 2rem 0 2rem 0;
   border-top: solid #dfe3ee 1px;
   display: flex;
   align-items: top;
@@ -529,5 +535,104 @@ main {
 
 aside {
   grid-area: social;
-  border: solid green 5px;
+  padding: 3rem 3rem 3rem 0;
 }
+
+.social {
+  display: grid;
+  grid-template-rows: repeat(auto-fit, 1fr);
+}
+
+.social-buttons {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-row-gap: 30px;
+}
+
+.social-button {
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 1rem;
+}
+
+.social-icon {
+  height: 25px;
+  padding: 0 35px 0 25px;
+}
+
+#facebook {
+  background-color: #7fccff;
+}
+
+#twitter {
+  background-color: #0099ff;
+}
+
+#linkedin {
+  background-color: #006bb2;
+}
+
+.widget {
+  padding-top: 25px;
+  display: grid;
+  grid-template-rows: repeat(auto-fit, 1fr);
+  border-bottom: solid #dfe3ee 2px;
+  color: #293e6a;
+}
+
+.no-bottom {
+  border-bottom: none;
+}
+
+.widget-option {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: .75rem;
+}
+
+.widget-icon {
+  font-size: 20px;
+}
+
+h2 {
+  padding-left: .5rem;
+}
+
+input[type=text],
+::-webkit-input-placeholder {
+  font-size: 1rem;
+}
+
+.copy-link {
+  width: 75%;
+  height: 50px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px 0 0 5px;
+  /*font-size: .5rem;*/
+}
+
+.copy-button {
+  width: 25%;
+  height: 50px;
+  border: none;
+  padding: 10px;
+  color: #fff;
+  background-color: #009999;
+  font-size: .75rem;
+  border-radius: 0 5px 5px 0;
+}
+
+
+
+
+
+
+
+
+
