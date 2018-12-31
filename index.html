@@ -15,70 +15,159 @@
       <section class="nav-sub">
         <h3>Main</h3>
         <article class="nav-links">
-          <div class="flex-icon"><i class="fas fa-home icon"></i></div>
-          <p class="nav-link">Home</p>
-          <div class="flex-icon"><i class="fas fa-briefcase icon"></i></div>
-          <p class="nav-link">Jobs</p>
-          <div class="flex-icon"><i class="fas fa-file-alt icon"></i></div>
-          <p class="nav-link">Resumes</p>
-          <div class="flex-icon"><i class="far fa-clipboard icon"></i></div>
-          <p class="nav-link">Tasks</p>
-          <div class="flex-icon"><i class="far fa-calendar-alt icon"></i></div>
-          <p class="nav-link">Calendar</p>
+          <span class="nav-link">
+            <span class="icon-flex">
+              <i class="fas fa-home"></i>
+            </span>
+            <span class="p-flex">
+              <p>Home</p>
+            </span>
+          </span>
+          <span class="nav-link">
+            <span class="icon-flex">
+              <i class="fas fa-briefcase"></i>
+            </span>
+            <span class="p-flex">
+              <p>Jobs</p>
+            </span>
+          </span>
+          <span class="nav-link">
+            <span class="icon-flex">
+              <i class="fas fa-file-alt"></i>
+            </span>
+            <span class="p-flex">
+              <p>Resumes</p>
+            </span>
+          </span>
+          <span class="nav-link">
+            <span class="icon-flex">
+              <i class="far fa-clipboard"></i>
+            </span>
+            <span class="p-flex">
+              <p>Tasks</p>
+            </span>
+          </span>
+          <span class="nav-link">
+            <span class="icon-flex">
+              <i class="far fa-calendar-alt"></i>
+            </span>
+            <span class="p-flex">
+              <p>Calendar</p>
+            </span>
+          </span>
         </article>
       </section>
       <section class="nav-sub">
         <h3>Admin</h3>
         <article class="nav-links">
-          <div class="flex-icon"><i class="fas fa-user-friends icon"></i></div>
-          <p class="nav-link">Users</p>
-          <div class="flex-icon"><i class="fas fa-map-marker-alt icon"></i></div>
-          <p class="nav-link">Locations</p>
-          <div class="flex-icon"><i class="fas fa-chart-pie icon"></i></div>
-          <p class="nav-link">Workflows</p>
-          <div class="flex-icon"><i class="far fa-copy icon"></i></div>
-          <p class="nav-link">Job Boards</p>
-          <div class="flex-icon"><i class="far fa-comments icon"></i></div>
-          <p class="nav-link">Social</p>
+          <span class="nav-link">
+            <span class="icon-flex">
+              <i class="fas fa-user-friends"></i>
+            </span>
+            <span class="p-flex">
+              <p>Users</p>
+            </span>
+          </span>
+          <span class="nav-link">
+            <span class="icon-flex">
+              <i class="fas fa-map-marker-alt"></i>
+            </span>
+            <span class="p-flex">
+              <p>Locations</p>
+            </span>
+          </span>
+          <span class="nav-link">
+            <span class="icon-flex">
+              <i class="fas fa-chart-pie"></i> 
+            </span>
+            <span class="p-flex">
+              <p>Workflows</p>
+            </span>
+          </span>
+          <span class="nav-link">
+            <span class="icon-flex">
+              <i class="far fa-copy"></i>
+            </span>
+            <span class="p-flex">
+              <p>Job Boards</p>
+            </span>
+          </span>
+          <span class="nav-link">
+            <span class="icon-flex">
+              <i class="far fa-comments"></i>
+            </span>
+            <span class="p-flex">
+              <p>Social</p>
+            </span>
+          </span>
         </article>
       </section>
       <section class="nav-sub">
         <h3>Categories</h3>
-        <article class="nav-links">
-          <div class="flex-icon"><i class="fas fa-check-square icon yellow"></i></div>
-          <p class="nav-link">Administrative</p>
-          <div class="flex-icon"><i class="fas fa-square icon blue"></i></div>
-          <p class="nav-link">Design</p>
-          <div class="flex-icon"><i class="fas fa-square icon red"></i></div>
-          <p class="nav-link">Executive</p>
-          <div class="flex-icon"><i class="fas fa-square icon green"></i></div>
-          <p class="nav-link">Human Resources</p>
-        </article>
+          <article class="checkboxes">
+            <div class="checkbox administrative">
+              <input type="checkbox" id="administrative" />
+              <label for="administrative">Administrative</label>
+            </div>
+            <div class="checkbox design">
+              <input type="checkbox" id="design" />
+              <label for="design">Design</label>
+            </div>
+            <div class="checkbox executive">
+              <input type="checkbox" id="executive" />
+              <label for="executive">Executive</label>
+            </div>
+            <div class="checkbox hr">
+              <input type="checkbox" id="hr" />
+              <label for="hr">Human Resources</label>
+            </div>
+          </article>
       </section>
     </nav>
     <header>
       <article class="search-bar">
-        <div class="search-div flex-icon"><i class="fas fa-bars icon"></i></div>
-        <div class="search-div flex-icon no-border"><i class="fas fa-search icon"></i></div>
+        <div class="search-div icon-flex square">
+          <i class="fas fa-bars icon"></i>
+        </div>
+        <div class="search-div icon-flex no-border">
+          <i class="fas fa-search icon"></i>
+        </div>
         <input type="search" class="search-div" placeholder="Search here for a job, task, or resume">
-        <div class="search-div flex-icon"><i class="fas fa-user-plus icon"></i></div>
-        <div class="search-div flex-icon"><i class="far fa-calendar-plus icon"></i></div>
-        <div class="search-div flex-icon"><i class="fas fa-th icon"></i></div>
+        <div class="search-div icon-flex square">
+          <i class="fas fa-user-plus icon"></i>
+        </div>
+        <div class="search-div icon-flex square">
+          <i class="far fa-calendar-plus icon"></i>
+        </div>
+        <div class="search-div icon-flex square">
+          <i class="fas fa-th icon"></i>
+        </div>
       </article>
       <article class="job-title">
         <div class="top-title">
           <div class="title-details">
             <h1>Dog Walker</h1>
             <div class="inline">
-              <p class="location-preview"><i class="fas fa-map-marker-alt"></i> Denver, CO</p>
-              <p class="location-preview">|</p><p class="highlight">Preview this post</p>
+              <i class="fas fa-map-marker-alt"></i> 
+              <p>Denver, CO</p>
+              <i class="fas fa-circle tiny"></i>
+              <p><span class="highlight">Preview this post</p>
             </div>
           </div>
           <div class="title-buttons">
-            <button class="title-button"><i class="fas fa-circle icon">Open</i></button>
-            <button class="title-button"><i class="fas fa-bookmark icon"></i></button>
-            <button class="title-button"><i class="fas fa-pencil-alt icon"></i></button>
-            <button class="title-button"><i class="far fa-trash-alt icon"></i></button>
+            <button class="left-button">
+              <i class="fas fa-circle"></i>
+                <p id="button-padding">Open</p>
+            </button>
+            <button class="title-button">
+              <i class="fas fa-bookmark"></i>
+            </button>
+            <button class="title-button">
+              <i class="fas fa-pencil-alt"></i>
+            </button>
+            <button class="title-button">
+              <i class="far fa-trash-alt"></i>
+            </button>
           </div>
         </div>
         <div class="bottom-title">
