@@ -13,3 +13,11 @@ A dumb problem I'm having is that I can't figure out how to take a screenshot of
 ### Comps
 
 Here's what I built. 
+
+<img width="1338" alt="top" src="https://user-images.githubusercontent.com/43555476/50581141-11aa0280-0e14-11e9-800c-3121f073c067.png">
+<img width="1337" alt="middle" src="https://user-images.githubusercontent.com/43555476/50581144-166eb680-0e14-11e9-8186-ad5de83a3690.png">
+<img width="1338" alt="bottom" src="https://user-images.githubusercontent.com/43555476/50581146-18387a00-0e14-11e9-8765-6e15b7d36638.png">
+
+And here's the comp we were asked to match. 
+
+![comp-challenge-two](https://user-images.githubusercontent.com/43555476/50581151-225a7880-0e14-11e9-92e1-2bc617dd7fb0.png)
