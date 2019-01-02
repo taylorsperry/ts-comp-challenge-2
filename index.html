@@ -2,6 +2,7 @@
 <html>
   <head>
     <title>Static Composition Two</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
@@ -89,20 +90,22 @@
     <header>
       <article class="search-bar">
         <div class="search-div icon-flex square">
-          <i class="fas fa-bars icon"></i>
+          <span id="double-icon"><i class="fas fa-caret-left"></i></span>
+            <i class="fas fa-bars"></i>
+          </span>
         </div>
         <div class="search-div icon-flex no-border">
-          <i class="fas fa-search icon"></i>
+          <i class="fas fa-search"></i>
         </div>
         <input type="search" class="search-div" placeholder="Search here for a job, task, or resume">
         <div class="search-div icon-flex square">
-          <i class="fas fa-user-plus icon"></i>
+          <i class="fas fa-user-plus"></i>
         </div>
         <div class="search-div icon-flex square">
-          <i class="far fa-calendar-plus icon"></i>
+          <i class="far fa-calendar-plus"></i>
         </div>
         <div class="search-div icon-flex square">
-          <i class="fas fa-th icon"></i>
+          <i class="fas fa-th"></i>
         </div>
       </article>
       <article class="job-title">
@@ -202,7 +205,7 @@
           <figcaption class="caption-container">
             <div class="caption">
               <p>Totals</p>
-              <i class="fas fa-circle tiny"></i>
+              <i class="fas fa-circle tiny" id="hide"></i>
               <p class="lc">Out of 5,231 views</p>
             </div>
           </figcaption>
@@ -228,7 +231,7 @@
       </section>
       <section class="description">
         <article class="description-header">
-          <p class="header-row uc">Job Description</p>
+          <p class="header-row">Job Description</p>
           <p class="header-row">
             <button class="edit-button">
               <i class="fas fa-pencil-alt"></i>
@@ -258,15 +261,15 @@
         <article class="social-buttons">
           <button class="social-button" id="facebook">
             <img src="images/facebook.svg" alt="Facebook" class="social-icon">
-            <p>Post to Facebook</p>
+            <p class="social-text">Post to Facebook</p>
           </button>
           <button class="social-button" id="twitter">
             <img src="images/twitter.svg" alt="twitter" class="social-icon">
-            <p>Tweet this Job</p>
+            <p class="social-text">Tweet this Job</p>
           </button>
           <button class="social-button" id="linkedin">
             <img src="images/linkedin.svg" alt="linkedin" class="social-icon">
-            <p>Post to LinkedIn</p>
+            <p class="social-text">Post to LinkedIn</p>
           </button>
         </article>
         <article class="widget">
@@ -274,7 +277,7 @@
             <i class="fas fa-globe-americas widget-icon"></i>
             <h2>Link to this job</h2>
           </span>
-          <p>neighborhood pupper borkf smol corgo long water shoob stop it fren </p>
+          <p class="widget-text">neighborhood pupper borkf smol corgo long water shoob stop it fren </p>
           <span>
             <input type="text" placeholder="www.fakewebsite.com" class="copy-link"><button class="copy-button">Copy</button>
           </span>
@@ -284,7 +287,7 @@
             <i class="far fa-window-maximize widget-icon"></i>
             <h2>Use the button widget</h2>
           </span>
-          <p>neighborhood pupper borkf smol corgo long water shoob stop it fren </p>
+          <p class="widget-text">This widget embeds the buttons for sharing the job for submitting a resume on your website.</p>
           <span>
             <input type="text" placeholder="fake widget" class="copy-link"><button class="copy-button">Copy</button>
           </span>
@@ -294,7 +297,7 @@
             <i class="far fa-paper-plane widget-icon"></i>
             <h2>Upload resumes by email</h2>
           </span>
-          <p>neighborhood pupper borkf smol corgo long water shoob stop it fren </p>
+          <p class="widget-text">You can automatically upload multiple resumes to this job by emailing the address below.</p>
           <span>
             <input type="text" placeholder="faker@fakewebsite.com" class="copy-link"><button class="copy-button">Copy</button>
           </span>
