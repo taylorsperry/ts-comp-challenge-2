@@ -181,8 +181,8 @@ header {
 }
 
 .search-bar {
-  color: #8b9dc3;
   display: flex;
+  color: #8b9dc3;
   font-size: 1.5rem;
 }
 
@@ -292,10 +292,10 @@ button {
 }
 
 #button-padding {
-  color: #8b9dc3;
-  font-weight: bold;
   padding-left: 10px;
   text-transform: uppercase;
+  color: #8b9dc3;
+  font-weight: bold;
 }
 
 .title-button:hover,
@@ -310,7 +310,7 @@ button {
 
 .button-tabs {
   display: grid;
-  grid-template-columns: repeat(7, 100px)
+  grid-template-columns: repeat(7, 100px);
   padding-left: 1.8rem;
 }
 
@@ -398,8 +398,8 @@ main {
 }
 
 .circle-graph {
-  justify-content: space-between;
   width: 33%;
+  justify-content: space-between;
 }
 
 .graph {
@@ -519,7 +519,8 @@ main {
   background-color: #fff;
   border-radius: 0 0 10px 10px;
   border-top: none;
-  border: solid #fff 2rem;
+  border-left: solid #fff 2rem;
+  border-right: solid #fff 2rem;
   display: grid;
   font-size: .85rem;
   grid-template-columns: 1fr 2fr;
@@ -670,11 +671,11 @@ input[type=text],
       "main";
     grid-template-columns: 1fr;
     grid-template-rows: .2fr 1fr 1fr;
+    width: 1030px;
     transition:all .2s linear;
     -o-transition:all .2s linear; 
     -moz-transition:all .2s linear; 
     -webkit-transition:all .2s linear;
-    width: 1030px;
   }
     
   nav {
