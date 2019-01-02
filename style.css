@@ -34,12 +34,12 @@ nav {
 }
 
 .profile {
-  display: flex;
-  justify-content: center;
   align-items: center;
-  flex-direction: column;
-  padding: 2rem;
   border-bottom: solid #293e6a 2px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem;
 }
 
 .profile-pic {
