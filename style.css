@@ -61,7 +61,6 @@ nav {
 }
 
 .nav-sub {
-  font-size: 1rem;
   padding-bottom: 2rem;
 }
 
@@ -70,11 +69,9 @@ h3 {
 }
 
 .nav-link {
-  align-items: center;
   display: grid;
   grid-template-columns: 1fr 4fr;
   padding: 1rem 0 1rem 1rem;
-  font-size: 1rem;
 }
 
 .icon-flex,
