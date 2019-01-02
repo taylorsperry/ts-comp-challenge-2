@@ -61,7 +61,7 @@ nav {
 }
 
 .nav-sub {
-  font-size: .75rem;
+  font-size: 1rem;
   padding-bottom: 2rem;
 }
 
@@ -70,9 +70,11 @@ h3 {
 }
 
 .nav-link {
+  align-items: center;
   display: grid;
   grid-template-columns: 1fr 4fr;
   padding: 1rem 0 1rem 1rem;
+  font-size: 1rem;
 }
 
 .icon-flex,
@@ -213,7 +215,8 @@ input[type=search]:focus {
   outline: none;
 }
 
-.square:hover {
+.square:hover,
+#double-icon:hover {
   background-color: #0099ff;
   color: #fff;
 }
