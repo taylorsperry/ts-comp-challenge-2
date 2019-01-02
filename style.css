@@ -61,7 +61,6 @@ nav {
 }
 
 .nav-sub {
-  font-size: .75rem;
   padding-bottom: 2rem;
 }
 
@@ -213,7 +212,8 @@ input[type=search]:focus {
   outline: none;
 }
 
-.square:hover {
+.square:hover,
+#double-icon:hover {
   background-color: #0099ff;
   color: #fff;
 }
